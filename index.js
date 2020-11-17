@@ -33,6 +33,6 @@ function unleashDog(dogName,dogBreed) {
    
 function exerciseDog(dogName,dogBreed){
   let result=[] ;
-  routine.forEach(exercise => exercise(dogName, dogBreed);
+  routine.forEach(exercise => exercise(dogName, dogBreed));
   return result;
 }
