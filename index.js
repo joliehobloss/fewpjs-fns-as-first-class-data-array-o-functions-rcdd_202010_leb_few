@@ -29,15 +29,12 @@ function unleashDog(dogName,dogBreed) {
   return `Unleash ${dogName} the ${dogBreed}`;
 }
 
-  let routine=[];
-   routine=[wakeDog(dogName,dogBreed),leashDog(dogName,dogBreed),walkToPark(dogName,dogBreed),throwFrisbee(dogName,dogBreed),walkHome(dogName,dogBreed),unleashDog(dogName,dogBreed)];
-   return routine;
-
-
-
-
-
-   /*   ✓ has variables for each activity
-      1) has an array called 'routine' that contains each activity
-    the function that runs the array o' functions
-      2) calls into the independent functions*/
+ const  routine=[wakeDog,leashDog,walkToPark,throwFrisbeee,walkHome,unleashDog];
+   
+function exerciseDog(dogName,dogBreed){
+  let result=[] ;
+   for(let i=0;i<routine.length;i++){
+   result.push(routine[i](dogName,dogBreed));
+   }
+   return result;
+}
