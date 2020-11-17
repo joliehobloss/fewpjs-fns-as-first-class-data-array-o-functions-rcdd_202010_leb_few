@@ -32,7 +32,7 @@ function unleashDog(dogName,dogBreed) {
  const routine=[wakeDog,leashDog,walkToPark,throwFrisbeee,walkHome,unleashDog];
    
 function exerciseDog(dogName,dogBreed){
-    let result=[] ;
-    result += routine.forEach(exercise => exercise(dogName, dogBreed));
-    return result;
+  let result=[] ;
+  routine.forEach(exercise => exercise(dogName, dogBreed));
+  return result;
 }
